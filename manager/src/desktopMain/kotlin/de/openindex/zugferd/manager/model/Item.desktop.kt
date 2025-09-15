@@ -28,7 +28,7 @@ import org.mustangproject.Item as _Item
 fun Item.build(): _Item? =
     _Item()
         .setProduct(product?.build())
-        .setQuantity(quantity.toBigDecimal().setScale(2, RoundingMode.HALF_EVEN))
+        .setQuantity(quantity.toBigDecimal().setScale(3, RoundingMode.HALF_EVEN))
         .setPrice(price.toBigDecimal().setScale(2, RoundingMode.HALF_EVEN))
         .let { item ->
             val n = notes?.trimToNull()
