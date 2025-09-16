@@ -51,7 +51,7 @@ val Number.formatAsPercentage: String
 val Number.formatAsQuantity: String
     get() = format(
         minPrecision = 1,
-        maxPrecision = 2,
+        maxPrecision = 3,
         grouped = false,
     )
 

@@ -88,7 +88,7 @@ enum class UnitOfMeasurement(
     val title: StringResource,
     val value: PluralStringResource,
     val minPrecision: Int = 0,
-    val maxPrecision: Int = 2,
+    val maxPrecision: Int = 3,
 ) {
     /** The lump sum. */
     LUMP_SUM(
