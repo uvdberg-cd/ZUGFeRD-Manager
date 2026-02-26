@@ -60,6 +60,7 @@ PLEASE CONSIDER THESE NOTES BEFORE STARTING YOUR TRANSLATION WORK!
     <string name="AppCreateGeneralRecipientAdd">neuer Empfänger</string>
     <string name="AppCreateGeneralRecipientEdit">Empfänger bearbeiten</string>
     <string name="AppCreateGeneralInvoiceNumber">Rechnungsnummer</string>
+    <string name="AppCreateGeneralOrderNumber">Bestellnummer</string>
     <string name="AppCreateGeneralDeliveryDate">Lieferdatum</string>
     <string name="AppCreateGeneralDeliveryDateStart">Start der Leistung</string>
     <string name="AppCreateGeneralDeliveryDateEnd">Ende der Leistung</string>

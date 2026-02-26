@@ -110,6 +110,7 @@ import de.openindex.zugferd.zugferd_manager.generated.resources.AppCreateGeneral
 import de.openindex.zugferd.zugferd_manager.generated.resources.AppCreateGeneralDueDate
 import de.openindex.zugferd.zugferd_manager.generated.resources.AppCreateGeneralInvoiceNumber
 import de.openindex.zugferd.zugferd_manager.generated.resources.AppCreateGeneralIssueDate
+import de.openindex.zugferd.zugferd_manager.generated.resources.AppCreateGeneralOrderNumber
 import de.openindex.zugferd.zugferd_manager.generated.resources.AppCreateGeneralRecipient
 import de.openindex.zugferd.zugferd_manager.generated.resources.AppCreateGeneralRecipientAdd
 import de.openindex.zugferd.zugferd_manager.generated.resources.AppCreateGeneralRecipientEdit
@@ -574,6 +575,15 @@ private fun ColumnScope.GeneralForm(state: CreateSectionState) {
                     value = state.invoiceNumber,
                     requiredIndicator = true,
                     onValueChange = { state.invoiceNumber = it },
+                    modifier = Modifier
+                        .weight(0.5f, true),
+                )
+
+                // Order number
+                TextField(
+                    label = Res.string.AppCreateGeneralOrderNumber,
+                    value = state.orderNumber,
+                    onValueChange = { state.orderNumber = it },
                     modifier = Modifier
                         .weight(0.5f, true),
                 )

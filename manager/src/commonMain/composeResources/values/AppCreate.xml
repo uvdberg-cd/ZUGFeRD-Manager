@@ -59,6 +59,7 @@ PLEASE CONSIDER THESE NOTES BEFORE STARTING YOUR TRANSLATION WORK!
     <string name="AppCreateGeneralRecipientAdd">new recipient</string>
     <string name="AppCreateGeneralRecipientEdit">edit recipient</string>
     <string name="AppCreateGeneralInvoiceNumber">invoice number</string>
+    <string name="AppCreateGeneralOrderNumber">order number</string>
     <string name="AppCreateGeneralDeliveryDate">delivery date</string>
     <string name="AppCreateGeneralDeliveryDateStart">delivery from</string>
     <string name="AppCreateGeneralDeliveryDateEnd">delivery to</string>

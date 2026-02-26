@@ -55,6 +55,7 @@ fun Invoice.build(method: PaymentMethod): _Invoice =
     _Invoice()
         .setCurrency(currency)
         .setNumber(number)
+        .setBuyerOrderReferencedDocumentID(orderNumber)
         .setIssueDate(issueDate.toJavaDate())
         .setDueDate(dueDate.toJavaDate())
         .setDeliveryDate(deliveryDate?.toJavaDate())
@@ -71,8 +72,6 @@ fun Invoice.build(method: PaymentMethod): _Invoice =
                         Res.string.InvoicePaymentTermDescriptionSepaCreditTransfer,
                         DATE_FORMAT.format(dueDate.toJavaDate()),
                     )
-
-                    else -> null
                 }
             }
         )

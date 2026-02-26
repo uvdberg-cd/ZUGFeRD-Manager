@@ -38,6 +38,7 @@ data class Invoice(
     val _paymentMethod: PaymentMethod = PaymentMethod.SEPA_CREDIT_TRANSFER,
 
     val number: String = "",
+    val orderNumber: String = "",
     val issueDate: LocalDate = Clock.System.todayIn(TimeZone.currentSystemDefault()),
     val dueDate: LocalDate = Clock.System.todayIn(TimeZone.currentSystemDefault()).plus(DatePeriod(days = 14)),
     val deliveryDate: LocalDate? = null,
